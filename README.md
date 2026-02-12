@@ -2,7 +2,7 @@
 
 **NxtLvl Tracker** is a premium, high-performance productivity application designed for those who value both discipline and elegance. Built with modern web technologies, it provides a seamless experience for managing daily goals, long-term habits, and weekly planning.
 
-![NxtLvl Tracker Banner](https://nxtlvl-tracker.web.app/og-image.png) *(Note: Add a real screenshot or OG image here later)*
+
 
 ---
 

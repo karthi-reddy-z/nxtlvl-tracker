@@ -1,73 +1,95 @@
-# React + TypeScript + Vite
+# 👑 NxtLvl Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**NxtLvl Tracker** is a premium, high-performance productivity application designed for those who value both discipline and elegance. Built with modern web technologies, it provides a seamless experience for managing daily goals, long-term habits, and weekly planning.
 
-Currently, two official plugins are available:
+![NxtLvl Tracker Banner](https://nxtlvl-tracker.web.app/og-image.png) *(Note: Add a real screenshot or OG image here later)*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **🏆 Royal Dashboard**: A sophisticated overview of your productivity, including real-time streak tracking and focus time analytics.
+- **📅 Comprehensive Planning**:
+  - **Daily Goals**: Prioritize your most important tasks.
+  - **Weekly Planner**: Keep your eye on the bigger picture.
+  - **Monthly Calendar**: Visualize events and milestones.
+- **🔄 Habit Mastery**: Build lasting discipline with our interactive habit tracker.
+- **☁️ Cloud Sync**: Real-time data persistence powered by **Cloud Firestore**. 
+- **🔐 Secure Authentication**: Private user accounts with **Firebase Auth**.
+- **🎨 Elite UI/UX**: Crafted with a "Royal" design system (Navy, Gold, Cream) using **Tailwind CSS** and **Framer Motion**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) & [shadcn/ui](https://ui.shadcn.com/)
+- **Backend**: [Firebase](https://firebase.google.com/) (Auth, Firestore, Hosting)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠 Getting Started
+
+### Prerequisites
+- Node.js 18+ 
+- Firebase account
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/karthi-reddy-z/nxtlvl-tracker.git
+   cd nxtlvl-tracker
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up Firebase**
+   - Create a project in the [Firebase Console](https://console.firebase.google.com/).
+   - Add a Web App and copy your config into `src/lib/firebase.ts`.
+   - Enable **Authentication** (Email/Password) and **Firestore Database**.
+
+4. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open the app**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 📦 Deployment
+
+The project is configured for **Firebase Hosting** with a static export:
+
+```bash
+npm run build
+npx firebase deploy
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 👑 The "Royal" Design System
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The app uses a curated HSL color palette designed for a premium dark-mode experience:
+
+- **Primary**: Navy Blue (`hsl(222, 47%, 11%)`)
+- **Accent**: Royal Gold (`hsl(45, 92%, 47%)`)
+- **Background**: Deep Onyx (`hsl(222, 47%, 4%)`)
+
+---
+
+## 👤 Author
+
+**Karthi Reddy**
+- GitHub: [@karthi-reddy-z](https://github.com/karthi-reddy-z)
+
+---
+
+*Explore the live version at [nxtlvl-tracker.web.app](https://nxtlvl-tracker.web.app)*

@@ -92,4 +92,4 @@ The app uses a curated HSL color palette designed for a premium dark-mode experi
 
 ---
 
-*Explore the live version at [nxtlvl-tracker.web.app](https://nxtlvl-tracker.web.app)*
+*Explore the live version at [nxtlvl-tracker.web.app](https://nxtlvl-tracker-qddd.vercel.app/auth/)*

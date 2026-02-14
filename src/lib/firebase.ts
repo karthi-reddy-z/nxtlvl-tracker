@@ -6,7 +6,7 @@ const firebaseConfig = {
     projectId: "nxtlvl-tracker",
     appId: "1:563905055996:web:18906f8e956ba2ca27db79",
     storageBucket: "nxtlvl-tracker.firebasestorage.app",
-    apiKey: "AIzaSyApROkFBsAP8fJ2Y2wwVLTKc4gQ3m8vRHs",
+    apiKey: "AIzaSyD8La4960uiUKJ_DEUMdDzTp4KTRqJKQkU",
     authDomain: "nxtlvl-tracker.firebaseapp.com",
     messagingSenderId: "563905055996",
     measurementId: "G-Q02NNFQEW4"
